@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+body {
+    background-color: aliceblue;
+    color: #3d3c3b;
+    font-family: "Comfortaa", sans-serif;
+}
+
+header {
+    background-color: #eaeaea;
+    color: #3d3c3b;
+    padding: 20px;
+    text-align: center;
+    font-family: "Protest Strike", sans-serif;
+}
+
+header button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #b2d9f7;
+    font-weight: bold;
+    transition: 1s ease;
+    font-family: "Comfortaa", sans-serif;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    height: 100vh;
+}
+
+div {
+    width: 50%;
+}
+
+#sobre {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-family: "Protest Strike", sans-serif;
+}
+
+.projeto {
+    background-color: #eaeaea;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 40%;
+    height: 340px;
+    margin: 20px;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#projetos {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.projeto:hover{
+    transform: scale(1.1);
+}
+
+#h2 {
+    text-align: center;
+}
+
+footer {
+    background-color: #eaeaea;
+    color: #1f1e1e;
+    padding: 20px;
+    margin-top: 60%;
+    text-align: center;
+}
+
+/* ------MODO ESCURO------ */
+
+.dark-theme {
+    background-color: #3d3c3b;
+    color: aliceblue;
+}
+
+.dark-theme header {
+    background-color: #1f1e1e;
+    color: #eaeaea;
+}
+
+.dark-theme header button {
+    background-color: #6c889e;
+}
+
+.dark-theme .projeto {
+    background-color: #1f1e1e;
+}
+
+.dark-theme footer{
+    background-color: #1f1e1e;
+    color: #eaeaea;
+}
+
+/* ------RESPONSIVIDADE------  */
+@media (max-width: 480px) {
+    img {
+        width: 200px;
+
+    }
+
+    .projeto {
+        width: 100%;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    #sobre {
+        text-align: center;
+        padding: 0;
+        width: 100%;
+    }
+
+    footer{
+        margin-top: 400%;
+        font-size: 12px;
+    }
+}
